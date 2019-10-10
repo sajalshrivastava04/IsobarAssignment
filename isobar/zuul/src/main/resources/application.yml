@@ -1,0 +1,26 @@
+zuul:
+  routes:
+      user:
+       serviceId: user
+      wallet:
+       serviceId: wallet
+  host:
+    socket-timeout-millis: 600000
+  
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+management:
+    endpoint:
+      shutdown:
+        enabled: true
+      refresh:
+        enabled: true
+      health:
+        enabled: true
+      restart:
+        enabled: true
+ 
+
+                            
